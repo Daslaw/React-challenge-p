@@ -8,6 +8,16 @@ import myJavascript from './images/jscopy.png'
 import react from './images/reactcopy.png'
 
 
+const user = (
+  <div className='image_div'>
+    {/* <img src={myImage} alt='asabeneh profile' /> */}
+    <img className='size' src={myHtml} alt='Html' />
+    <img className='size' src={myCss} alt='CSS' />
+    <img  className='size' src={myJavascript} alt='Javascript' />
+    <img  className='size' src={react} alt='React' />
+  </div>
+)
+
 const main = (
   <header>
     <div className='header-wrapper'>
@@ -86,7 +96,7 @@ const footer = (
 const app = (
   <div className='app'>
     {main}
-    {/* {user} */}
+    {user}
     {header}
     {footer}
   </div>
